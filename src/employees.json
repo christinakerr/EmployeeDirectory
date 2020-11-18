@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Bob",
+        "occupation": "Fry Cook",
+        "email": "bob@company.com"
+    },
+    {
+        "id": 2,
+        "name": "Fred",
+        "occupation": "Restaurant Owner",
+        "email": "fred@company.com"
+    },
+    {
+        "id": 3,
+        "name": "Jane",
+        "occupation": "Cashier",
+        "email": "jane@company.com"
+    },
+    {
+        "id": 4,
+        "name": "Jill",
+        "occupation": "Cashier",
+        "email": "jill@company.com"
+    },
+    {
+        "id": 5,
+        "name": "Susie",
+        "occupation": "Manager",
+        "email": "susie@company.com"
+    },
+    {
+        "id": 6,
+        "name": "Doug",
+        "occupation": "Chef",
+        "email": "doug@company.com"
+    },
+    {
+        "id": 7,
+        "name": "Mary",
+        "occupation": "Assistant Manager",
+        "email": "mary@company.com"
+    },
+    {
+        "id": 8,
+        "name": "John",
+        "occupation": "Sous Chef",
+        "email": "john@company.com"
+    },
+    {
+        "id": 9,
+        "name": "Lucy",
+        "occupation": "Line Cook",
+        "email": "lucy@company.com"
+    },
+    {
+        "id": 10,
+        "name": "Dave",
+        "occupation": "Waiter",
+        "email": "dave@company.com"
+    },
+    {
+        "id": 11,
+        "name": "Jessica",
+        "occupation": "Waiter",
+        "email": "jessica@company.com"
+    },
+    {
+        "id": 12,
+        "name": "Janet",
+        "occupation": "Waiter",
+        "email": "janet@company.com"
+    }
+]
