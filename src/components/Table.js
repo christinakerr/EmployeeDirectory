@@ -1,19 +1,25 @@
-import React from "react";
-import Row from "./Row";
+import React, {useState } from "react";
+import Sort from "./Sort";
 
 function Table(props) {
+    const [sort, setSort] = useState("id");
+
+    const sortBy = event => {
+        setSort(event.target.id);
+    }
+
     return (
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Occupation</th>
-                    <th scope="col">Email</th>
+                    <th scope="col" id="id" onClick={sortBy}>ID</th>
+                    <th scope="col" id="name" onClick={sortBy}>Name</th>
+                    <th scope="col" id="occupation" onClick={sortBy}>Occupation</th>
+                    <th scope="col" id="email" onClick={sortBy}>Email</th>
                 </tr>
             </thead>
             <tbody>
-                <Row users={props.users} />
+                <Sort users={props.users} sort={sort}/>
             </tbody>
         </table>
     )
