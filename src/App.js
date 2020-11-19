@@ -1,30 +1,37 @@
 // import logo from './logo.svg';
 import './App.css';
 import Table from "./components/Table"
-import employees from "../src/employees.json"
+import employeeDirectory from "../src/employees.json"
 import SearchBar from "./components/SearchBar";
-import filter from "./utils/filter"
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 function App() {
-  // const [filteredEmployees, setFilteredEmployees] = useState("")
+  const [employees, setEmployees] = useState(employeeDirectory)
+  const [search, setSearch] = useState("");
 
-  let employeeArray = employees;
-
-  const searchEmployees = (employeeFilter) => {
-    if (employeeFilter !== "Select Employee") { // if an employee name is selected, filter the array to only include that employee
-      employeeArray = filter(employeeFilter);
-      console.log(employeeArray);
+  useEffect(() => {
+    if (!search) {
+      setEmployees(employeeDirectory)
+      return;
     }
-    // setFilteredEmployees(employeeArray)
+
+    const filtered = employees.filter(employee => employee.name.includes(search));
+
+    setEmployees(filtered);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [search]);
+
+
+  const handleInputChange = (event) => {
+    setSearch(event.target.value);
   }
 
   return (
     <div className="container">
       <h1>Employee Directory</h1>
       <p>Filter by employee name using the dropdown below or sort by name, position, or email with the column heading buttons.</p>
-    <SearchBar employee={searchEmployees}/>
-    <Table users={employeeArray}/>
+    <SearchBar results={search} handleInputChange={handleInputChange}/>
+    <Table users={employees}/>
     </div>
   );
 }

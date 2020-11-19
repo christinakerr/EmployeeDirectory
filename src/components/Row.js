@@ -1,14 +1,14 @@
 import React from "react";
 
-function Row(props) {
+function Row({users}) {
     return <>
         {
-            props.users.map(user => (
-                <tr>
-                    <th scope="row">{user.id}</th>
-                    <td>{user.name}</td>
-                    <td>{user.occupation}</td>
-                    <td>{user.email}</td>
+            users.map(({id, name, occupation, email }) => (
+                <tr key={id}>
+                    <th scope="row">{id}</th>
+                    <td>{name}</td>
+                    <td>{occupation}</td>
+                    <td>{email}</td>
                 </tr>
             ))
         }
