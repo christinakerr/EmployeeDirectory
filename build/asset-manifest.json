@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/EmployeeDirectory/static/css/main.c34baaed.chunk.css",
+    "main.js": "/EmployeeDirectory/static/js/main.6795c131.chunk.js",
+    "main.js.map": "/EmployeeDirectory/static/js/main.6795c131.chunk.js.map",
+    "runtime-main.js": "/EmployeeDirectory/static/js/runtime-main.255a8955.js",
+    "runtime-main.js.map": "/EmployeeDirectory/static/js/runtime-main.255a8955.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/EmployeeDirectory/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.7b8a1325.chunk.js": "/EmployeeDirectory/static/js/2.7b8a1325.chunk.js",
+    "static/js/2.7b8a1325.chunk.js.map": "/EmployeeDirectory/static/js/2.7b8a1325.chunk.js.map",
+    "static/js/3.95640c2a.chunk.js": "/EmployeeDirectory/static/js/3.95640c2a.chunk.js",
+    "static/js/3.95640c2a.chunk.js.map": "/EmployeeDirectory/static/js/3.95640c2a.chunk.js.map",
+    "index.html": "/EmployeeDirectory/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/EmployeeDirectory/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.c34baaed.chunk.css.map": "/EmployeeDirectory/static/css/main.c34baaed.chunk.css.map",
+    "static/js/2.7b8a1325.chunk.js.LICENSE.txt": "/EmployeeDirectory/static/js/2.7b8a1325.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.255a8955.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.7b8a1325.chunk.js",
+    "static/css/main.c34baaed.chunk.css",
+    "static/js/main.6795c131.chunk.js"
+  ]
+}
