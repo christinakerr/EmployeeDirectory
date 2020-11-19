@@ -2,7 +2,7 @@
 
 ## Deployed
 
-[Access the deployed web application here.](#)
+[Access the deployed web application here.](https://christinakerr.github.io/EmployeeDirectory/)
 
 ## Purpose
 
