@@ -21,10 +21,12 @@ function App() {
   }
 
   return (
-    <>
+    <div className="container">
+      <h1>Employee Directory</h1>
+      <p>Filter by employee name using the dropdown below or sort by name, position, or email with the column heading buttons.</p>
     <SearchBar employee={searchEmployees}/>
     <Table users={employeeArray}/>
-    </>
+    </div>
   );
 }
 

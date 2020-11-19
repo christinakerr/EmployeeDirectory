@@ -12,10 +12,10 @@ function Table(props) {
         <table className="table">
             <thead>
                 <tr>
-                    <th scope="col" id="id" onClick={sortBy}>ID</th>
-                    <th scope="col" id="name" onClick={sortBy}>Name</th>
-                    <th scope="col" id="occupation" onClick={sortBy}>Occupation</th>
-                    <th scope="col" id="email" onClick={sortBy}>Email</th>
+                    <th scope="col"><button id="id" onClick={sortBy} type="button" class="btn btn-primary">ID</button></th>
+                    <th scope="col"><button id="name" onClick={sortBy} type="button" class="btn btn-primary">Name</button></th>
+                    <th scope="col"><button id="occupation" onClick={sortBy} type="button" class="btn btn-primary">Position</button></th>
+                    <th scope="col"><button id="email" onClick={sortBy} type="button" class="btn btn-primary">Email</button></th>
                 </tr>
             </thead>
             <tbody>
