@@ -9,7 +9,7 @@ function Table(props) {
     }
 
     return (
-        <table class="table">
+        <table className="table">
             <thead>
                 <tr>
                     <th scope="col" id="id" onClick={sortBy}>ID</th>
