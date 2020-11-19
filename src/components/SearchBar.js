@@ -1,9 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 import employees from "../employees.json"
 
 function SearchBar(props) {
-    const [employeeState] = useState("Select Employee")
-
     const {employee} = props;
     let employeeOptions = ["<option key=\"0\">Select Employee</option>"];
     for (let i = 0; i < employees.length; i++) {
@@ -15,7 +13,7 @@ function SearchBar(props) {
     }
     return (
         <form>
-            <select value={employeeState} className="mdb-select md-form colorful-select dropdown-primary" searchable="Search here.." dangerouslySetInnerHTML={{ __html: employeeOptions }} onChange={filterEmployees}>
+            <select className="mdb-select md-form colorful-select dropdown-primary" searchable="Search here.." dangerouslySetInnerHTML={{ __html: employeeOptions }} onChange={filterEmployees}>
             </select>
         </form>
     )
