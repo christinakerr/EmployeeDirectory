@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="container">
       <h1>Employee Directory</h1>
-      <p>Filter by employee name using the dropdown below or sort by name, position, or email with the column heading buttons.</p>
+      <p>Filter by employee name using the search bar below or sort by name, position, or email with the column heading buttons.</p>
     <SearchBar results={search} handleInputChange={handleInputChange}/>
     <Table users={employees}/>
     </div>
